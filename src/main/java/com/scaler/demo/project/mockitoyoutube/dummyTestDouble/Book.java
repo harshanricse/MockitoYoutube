@@ -1,4 +1,4 @@
-package com.scaler.demo.project.mockitoyoutube.models;
+package com.scaler.demo.project.mockitoyoutube.dummyTestDouble;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,6 @@
-package com.scaler.demo.project.mockitoyoutube.services;
+package com.scaler.demo.project.mockitoyoutube.fakeTestDouble;
 
-import com.scaler.demo.project.mockitoyoutube.models.Book;
-import com.scaler.demo.project.mockitoyoutube.repository.BookRepository;
+import com.scaler.demo.project.mockitoyoutube.dummyTestDouble.EmailService;
 
 public class BookService {
     private BookRepository bookRepository;
@@ -14,4 +13,5 @@ public class BookService {
     public int findNumberOfBooks(){
         return bookRepository.findAll().size();
     }
+    //other methods use EmailService
 }

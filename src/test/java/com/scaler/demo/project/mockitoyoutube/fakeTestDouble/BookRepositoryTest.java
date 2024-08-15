@@ -1,6 +1,7 @@
-package com.scaler.demo.project.mockitoyoutube.repository;
+package com.scaler.demo.project.mockitoyoutube.fakeTestDouble;
 
-import com.scaler.demo.project.mockitoyoutube.models.Book;
+import com.scaler.demo.project.mockitoyoutube.fakeTestDouble.Book;
+import com.scaler.demo.project.mockitoyoutube.fakeTestDouble.BookRepository;
 
 import java.util.HashMap;
 import java.util.List;

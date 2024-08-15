@@ -1,7 +1,8 @@
-package com.scaler.demo.project.mockitoyoutube.services;
+package com.scaler.demo.project.mockitoyoutube.fakeTestDouble;
 
-import com.scaler.demo.project.mockitoyoutube.models.Book;
-import com.scaler.demo.project.mockitoyoutube.repository.BookRepositoryTest;
+import com.scaler.demo.project.mockitoyoutube.fakeTestDouble.Book;
+import com.scaler.demo.project.mockitoyoutube.fakeTestDouble.BookService;
+import com.scaler.demo.project.mockitoyoutube.fakeTestDouble.BookRepositoryTest;
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDate;
