@@ -1,11 +1,11 @@
-package com.scaler.demo.project.mockitoyoutube.spyTestDouble;
+package com.scaler.demo.project.mockitoyoutube.mockTestDouble;
 
 public class BookService {
     private BookRepository bookRepository;
     public BookService(BookRepository bookRepository){
         this.bookRepository = bookRepository;
     }
-    public void addBook(Book book){
+    void addBook(Book book){
         bookRepository.save(book);
     }
     //other methods use EmailService
