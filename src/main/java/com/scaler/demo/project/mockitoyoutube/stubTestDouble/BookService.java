@@ -1,6 +1,7 @@
-package com.scaler.demo.project.mockitoyoutube.fakeTestDouble;
+package com.scaler.demo.project.mockitoyoutube.stubTestDouble;
 
-import com.scaler.demo.project.mockitoyoutube.dummyTestDouble.EmailService;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BookService {
     private BookRepository bookRepository;
@@ -13,5 +14,14 @@ public class BookService {
     public int findNumberOfBooks(){
         return bookRepository.findAll().size();
     }
-    //other methods use EmailService
+    List<Book> getNewBookwithAppliedDiscount(int discountRate, int days){
+        List<Book> newBooks = bookRepository.findNewBooks(days);
+        for(Book book:newBooks){
+            int currPrice = book.getPrice();
+            int discount = (currPrice*discountRate)/100;
+            int updatedPrice = currPrice-discount;
+            book.setPrice(updatedPrice);
+        }
+        return newBooks;
+    }
 }

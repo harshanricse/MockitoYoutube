@@ -13,4 +13,5 @@ public class BookService {
     public int findNumberOfBooks(){
         return bookRepository.findAll().size();
     }
+    //other methods use email service
 }
